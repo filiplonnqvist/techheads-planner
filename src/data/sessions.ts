@@ -17,7 +17,7 @@ export const sessions: Session[] = [
     "speaker": "Tony Gorschek",
     "description": "Skills, hiring and upskilling in a GenAI boom\n\nWe’re excited to welcome Prof. Dr. Dr. Tony Gorschek as a speaker at TechHeads 2026. Tony is a Professor of Software Engineering at Blekinge Institute of Technology and a senior guest researcher at Fortiss (Germany). With extensive industry experience as a CTO, consultant, engineer, chief architect, and product manager, he bridges cutting-edge research with the realities of building software-intensive products and services.\n\nIn his session, Tony will share his perspective on the future skills landscape for engineers. What changes when GenAI becomes part of everyday engineering? What are the biggest challenges and blind spots for companies and education, and what practical steps can we take to avoid falling behind?",
     "time": "09:00-10:00",
-    "location": "Gröna Salen",
+    "location": "Gröna salen",
     "company": "BTH",
     "category": "The Big Picture",
     "keywords": [
@@ -34,7 +34,7 @@ export const sessions: Session[] = [
     "speaker": "Tony Gorschek  - BTH, Stefan Rasmussen - Ericsson, Maria Verbitskaya - Budbee, Linus Diestelkamp, Sourcicle (kolla stavningen) Moderator: Sanas Fritz",
     "description": "As generative AI reshapes everyday engineering, how do organizations ensure their workforce doesn't fall behind? In this panel, industry experts and talent leaders discuss the realities of the future skills landscape. What happens when AI becomes a standard workflow rather than an experiment? How do we identify the biggest blind spots in hiring and people management, and what practical steps are required to upskill teams at scale? Join Tony Gorschek (BTH), Stefan Rasmussen (Ericsson), Maria Verbitskaya (Budbee), and Linus Diestelkamp (Sourcicle) as they explore how to build and future-proof the next generation of tech talent.",
     "time": "10:00-10:30",
-    "location": "Gröna Salen",
+    "location": "Gröna salen",
     "company": "",
     "category": "The Big Picture",
     "keywords": [
@@ -131,7 +131,7 @@ export const sessions: Session[] = [
     "title": "Modern Guru and the Path to Artificial Happiness",
     "speaker": "",
     "description": "",
-    "time": "11:00–11:45",
+    "time": "11:00-11:45",
     "location": "",
     "company": "",
     "category": "Other",
@@ -228,7 +228,7 @@ export const sessions: Session[] = [
     "speaker": "Jörg Teichgraeber",
     "description": "Kort beskrivning: Passet utgår från forskning om cognitive offloading, det vill säga när det är rationellt att låta AI ta över delar av tänkandet och när det istället urholkar den djupbearbetning som krävs för faktisk inlärning. Jag kopplar detta till konkreta iakttagelser från min tid som skolchef på Hyper Island, till aktuell forskning inom lärande och vad det betyder för mitt arbete med AI-kompetensbehov, där frågan om vad man ska lära sig själv och vad man kan delegera till AI återkommer.",
     "time": "11:45-12:10",
-    "location": "Gröna Salen",
+    "location": "Gröna salen",
     "company": "Techtank",
     "category": "The Big Picture",
     "keywords": [
@@ -289,7 +289,7 @@ export const sessions: Session[] = [
     "speaker": "Jesper Bleeke, Maria Koblanck, Anders Wangelin, Jörg Teichgraber. Moderator: Louise Östlund",
     "description": "",
     "time": "12:10-12:30",
-    "location": "Gröna Salen",
+    "location": "Gröna salen",
     "company": "",
     "category": "The Big Picture",
     "keywords": [
@@ -583,7 +583,7 @@ export const sessions: Session[] = [
     "speaker": "Panel Säkerhet\nCarl-Johan Ekelund, Atea\nMikael Svall, Outpost\nMåns Sandsjö, Frode Langemoen, IBM\nAndreas Kristiansson, Telenor\nMattias Hagelin, Kalmar Energi\nAnna Flinck, Kalmar Kommun\n45 min\nModerator: Louise Östlund",
     "description": "Security in a volatile world is no longer just about firewalls - it requires total resilience. In this panel, experts from IT, emerging tech, and critical infrastructure come together to discuss how we build comprehensive defense. How do we tackle everything from offensive cyberattacks and future quantum threats to securing connectivity, power grids, and local preparedness? Join representatives from Atea, Outpost24, IBM, Telenor, Kalmar Energi, and Kalmar Municipality as they explore how to shift from reactive crisis management to proactive security.",
     "time": "16:00-16:45",
-    "location": "Gröna Salen",
+    "location": "Gröna salen",
     "company": "",
     "category": "Security & Resilience",
     "keywords": [
