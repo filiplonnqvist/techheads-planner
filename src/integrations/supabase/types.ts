@@ -14,13 +14,73 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      profiles: {
+        Row: {
+          created_at: string
+          display_name: string
+          id: string
+        }
+        Insert: {
+          created_at?: string
+          display_name?: string
+          id: string
+        }
+        Update: {
+          created_at?: string
+          display_name?: string
+          id?: string
+        }
+        Relationships: []
+      }
+      schedules: {
+        Row: {
+          answers: Json
+          created_at: string
+          id: string
+          is_public: boolean
+          name: string
+          session_ids: string[]
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          answers: Json
+          created_at?: string
+          id?: string
+          is_public?: boolean
+          name?: string
+          session_ids?: string[]
+          updated_at?: string
+          user_id?: string
+        }
+        Update: {
+          answers?: Json
+          created_at?: string
+          id?: string
+          is_public?: boolean
+          name?: string
+          session_ids?: string[]
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      get_public_schedule: {
+        Args: { _id: string }
+        Returns: {
+          answers: Json
+          display_name: string
+          id: string
+          name: string
+          session_ids: string[]
+          updated_at: string
+        }[]
+      }
     }
     Enums: {
       [_ in never]: never
