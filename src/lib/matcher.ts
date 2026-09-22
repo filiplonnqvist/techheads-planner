@@ -121,4 +121,4 @@ export function whyLine(s: ScoredSession): string {
   return parts.length ? `Matches: ${parts.join(" · ")}` : "Fills a free slot in your day";
 }
 
-export const totalSessions = sessions.length;
+export const totalSessions = schedulableSessions.length;
