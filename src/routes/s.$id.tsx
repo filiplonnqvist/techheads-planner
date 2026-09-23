@@ -90,7 +90,7 @@ function SharedPage() {
           );
         })}
       </ol>
-      <SessionDialog session={open} onClose={() => setOpen(null)} />
+      <SessionDialog session={open} onOpenChange={(o) => !o && setOpen(null)} />
     </main>
   );
 }
