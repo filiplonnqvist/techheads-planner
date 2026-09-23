@@ -1,3 +1,5 @@
+import { countBy, orderBy } from "lodash";
+
 import { sessions, type Session } from "@/data/sessions";
 
 export type Density = "packed" | "balanced" | "spacious";
@@ -35,12 +37,8 @@ export const allCategories = Array.from(
 ).sort((a, b) => (a === "Other" ? 1 : b === "Other" ? -1 : a.localeCompare(b)));
 
 export function topKeywords(limit = 12): string[] {
-  const counts = new Map<string, number>();
-  for (const s of sessions) {
-    for (const k of s.keywords) counts.set(k, (counts.get(k) ?? 0) + 1);
-  }
-  return Array.from(counts.entries())
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+  const counts = countBy(sessions.flatMap((s) => s.keywords));
+  return orderBy(Object.entries(counts), [([, n]) => n, ([k]) => k], ["desc", "asc"])
     .slice(0, limit)
     .map(([k]) => k);
 }

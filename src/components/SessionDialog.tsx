@@ -33,9 +33,10 @@ export function SessionDialog({
             </DialogHeader>
             <p className="text-sm text-primary">{whyLine(session)}</p>
             {session.description && (
-              <p className="whitespace-pre-line text-[15px] leading-relaxed text-foreground/90">
-                {session.description}
-              </p>
+              <div
+                className="whitespace-pre-line text-[15px] leading-relaxed text-foreground/90"
+                dangerouslySetInnerHTML={{ __html: session.description }}
+              />
             )}
             <div className="flex flex-wrap gap-2 pt-2">
               {[session.category, ...session.keywords].filter(Boolean).map((tag) => (
