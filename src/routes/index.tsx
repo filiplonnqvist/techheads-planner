@@ -5,6 +5,7 @@ import { ArrowLeft, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SessionDialog } from "@/components/SessionDialog";
 import { SwapSheet } from "@/components/SwapSheet";
+import { SaveBar } from "@/components/SaveBar";
 import {
   allCategories,
   alternativesFor,
@@ -219,6 +220,15 @@ function Index() {
           onSwap={setSwapTarget}
           onRestart={restart}
           onEdit={() => setStep("categories")}
+        />
+      )}
+      {step === "result" && schedule.length > 0 && (
+        <SaveBar
+          answers={answers}
+          scheduleIds={scheduleIds}
+          savedId={savedId}
+          savedName={savedName}
+          onSaved={onSaved}
         />
       )}
 
